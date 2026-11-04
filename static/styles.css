@@ -1,0 +1,65 @@
+.title{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: Georgia;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    width: 500px;
+    height: 150px;
+
+}
+
+body{
+ background-image: linear-gradient(to right, black);
+}
+
+h2 {
+    font-family: Georgia;
+    color: black;
+}
+
+h3 {
+    font-family: Georgia;
+    color: white;
+    font-size: 20px;
+
+}
+
+.statusform{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+p {
+    font-family: Cambria;
+}
+
+.statusbox{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 450px;
+    height: 200px;
+
+    background-color: floralwhite;
+    border: 5px solid black;
+    border-radius: 15px;
+    padding: 8px
+
+}
+
+em {
+    font-weight: bold;
+
+}
+
+.at-limit {
+
+outline: 1px solid #D65A5A;
+
+}
+

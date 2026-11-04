@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+.idea/
+status.db
+status.txt
+status_result.txt
+.env
+.postman/
+postman/
