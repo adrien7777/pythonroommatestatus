@@ -31,7 +31,16 @@ form.addEventListener("submit",
     });
 
     const result = await
-        response.json()
+        response.json();
+    const message = document.querySelector("#form-message");
+
+    if(!response.ok) {
+        message.textContent = result.error;
+        return;
+    }
+
+    message.textContent = "Status returned successfully";
+    form.reset();
 
     document.querySelector("#current-status").textContent =
         result.status;

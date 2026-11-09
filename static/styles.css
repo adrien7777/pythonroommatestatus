@@ -38,6 +38,16 @@ p {
     font-family: Cambria;
 }
 
+#form-message {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+}
+
+#form-message.show {
+    opacity: 1;
+}
+
 .statusbox{
     margin-left: auto;
     margin-right: auto;
