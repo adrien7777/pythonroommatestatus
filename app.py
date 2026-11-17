@@ -8,7 +8,7 @@ def home_page():
 
 @app.route("/")
 def get_status():
-    return {"status": check_status ()}
+    return {"status": check_status()}
 
 @app.post("/")
 def update_status():
