@@ -47,3 +47,16 @@ form.addEventListener("submit",
 })
 
 
+const fields = document.querySelectorAll("#status, #location, #reason");
+fields.forEach((field) => {
+    field.addEventListener("input", () => {
+        field.classList.toggle("at-limit",
+            field.value.length === field.maxLength
+            );
+
+        });
+
+});
+
+
+
