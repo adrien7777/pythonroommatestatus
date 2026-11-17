@@ -56,3 +56,19 @@ em {
     font-weight: bold;
 
 }
+
+#form-message {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+}
+
+#form-message.show {
+    opacity: 1;
+}
+
+.at-limit {
+
+outline: 1px solid #D65A5A;
+
+}
