@@ -6,7 +6,7 @@ app = Flask(__name__)
 def home_page():
     return render_template('status.html', data=check_status())
 
-@app.route("/")
+@app.route("/api/status")
 def get_status():
     return {"status": check_status ()}
 
