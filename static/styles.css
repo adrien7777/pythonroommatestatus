@@ -38,6 +38,21 @@ p {
     font-family: Cambria;
 }
 
+#form-message {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+}
+
+#form-message.show {
+    opacity: 1;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
 .statusbox{
     margin-left: auto;
     margin-right: auto;
@@ -57,18 +72,9 @@ em {
 
 }
 
-#form-message {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-
-}
-
-#form-message.show {
-    opacity: 1;
-}
-
 .at-limit {
 
 outline: 1px solid #D65A5A;
 
 }
+

@@ -31,7 +31,18 @@ form.addEventListener("submit",
     });
 
     const result = await
-        response.json()
+        response.json();
+    const message = document.querySelector("#form-message");
+
+    if(!response.ok) {
+        message.textContent = result.error;
+        message.classList.add('show');
+        return;
+    }
+
+    message.textContent = "Status returned successfully";
+    message.classList.add('show');
+    form.reset();
 
     document.querySelector("#current-status").textContent =
         result.status;
@@ -46,7 +57,6 @@ form.addEventListener("submit",
 
 })
 
-
 const fields = document.querySelectorAll("#status, #location, #reason");
 fields.forEach((field) => {
     field.addEventListener("input", () => {
@@ -57,6 +67,3 @@ fields.forEach((field) => {
         });
 
 });
-
-
-
